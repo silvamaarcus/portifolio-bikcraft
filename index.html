@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,87 @@
   <link rel="stylesheet" href="./src/styles/style.css">
   <title>Bikcraft</title>
 </head>
+
 <body>
   <section class="header-intro-bg">
-    <div class="header">
-      <a href="./">
-        <img src="./src/assets/img/bikcraft.svg" alt="Bikcraft" width="135">
-      </a>
+    <div class="container">
+      <header class="header">
+        <a href="./">
+          <img src="./src/assets/img/bikcraft.svg" alt="Bikcraft" width="135">
+        </a>
+        <nav>
+          <ul>
+            <a href="#bicicletas">
+              <li class="text-nav">Bicicletas</li>
+            </a>
+            <a href="#seguro">
+              <li class="text-nav">Seguros</li>
+            </a>
+            <a href="#contato">
+              <li class="text-nav">Contato</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
 
-      <nav>
-        <ul>
-          <a href="#bicicletas"><li class="text-nav">Bicicletas</li></a>
-          <a href="#seguro"><li class="text-nav">Seguros</li></a>
-          <a href="#contato"><li class="text-nav">Contato</li></a>
-        </ul>
-      </nav>
+      <main class="intro">
+        <div class="intro-texto">
+          <h1 class="text-h1">Bicicletas feitas sob medida<span>.</span></h1>
+          <p class="text-p-med">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+          <a href="#bicicletas" class="btn-primario">Selecione a sua</a>
+        </div>
+        <img src="./src/assets/img/bicicletas/nimbus-home.jpg" alt="Nimbus" width="640">
+      </main>
     </div>
-    
+  </section>
+
+  <section class="bicicletas" id="bicicletas">
+    <h1 class="text-h1">escolha a sua<span>.</span></h1>
+
+    <div class="bicicletas-modelos">
+      <div class="modelo">
+        <img src="./src/assets/img/bicicletas/magic-home.jpg" alt="Magic" width="460">
+        <div class="modelo-texto">
+          <h2 class="text-h2">Magic Might</h2>
+          <p class="text-p-s">R$ 2699</p>
+        </div>
+      </div>
+
+      <div class="modelo">
+        <img src="./src/assets/img/bicicletas/nimbus-home.jpg" alt="Nimbus" width="460">
+        <div class="modelo-texto">
+          <h2 class="text-h2">Nimbus Stark</h2>
+          <p class="text-p-s">R$ 4699</p>
+        </div>
+      </div>
+
+      <div class="modelo">
+        <img src="./src/assets/img/bicicletas/nebula-home.jpg" alt="Nebula" width="460">
+        <div class="modelo-texto">
+          <h2 class="text-h2">Nebula Cosmic</h2>
+          <p class="text-p-s">R$ 6699</p>
+        </div>
+      </div>
+
+      <!-- <div class="modelo">
+        <div class="modelo-img">
+          <img src="./src/assets/img/bicicletas/nimbus-home.jpg" alt="Nimbus" width="460">
+        </div>
+        <h2 class="text-h2 modelo-nome"><span><img src="/src/assets/dec/detalhe-titulo.svg"></span> Nimbus Stark</h2>
+        <p class="text-p-s">R$ 4699</p>
+      </div>
+
+      <div class="modelo">
+        <div class="modelo-img">
+          <img src="./src/assets/img/bicicletas/nebula-home.jpg" alt="Nebula" width="460">
+        </div>
+        <h2 class="text-h2 modelo-nome"><span><img src="/src/assets/dec/detalhe-titulo.svg"></span>Nebula Cosmic</h2>
+        <p class="text-p-s">R$ 6699</p>
+      </div> -->
+
+    </div>
+
   </section>
 </body>
+
 </html>

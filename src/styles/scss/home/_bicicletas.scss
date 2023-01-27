@@ -1,0 +1,68 @@
+.bicicletas {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bicicletas span {
+  color: $p1;
+}
+
+.bicicletas-modelos {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.modelo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modelo img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.modelo-texto {
+  padding: 12px 36px;
+}
+
+.modelo-texto h2 {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modelo-texto p {
+  margin-bottom: 120px;
+}
+
+.modelo-texto h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  position: absolute;
+  top: 12px;
+  left: -24px;
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  .bicicletas h1 {
+    padding-left: 12px;
+  }
+  .bicicletas-modelos {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .bicicletas-modelos::-webkit-scrollbar {
+    border-radius: 64px;
+    width: 8px; /* define a largura da barra */
+    background: $g1; /* define a cor de fundo */
+  }
+  .modelo {
+    width: 300px;
+  }
+}
