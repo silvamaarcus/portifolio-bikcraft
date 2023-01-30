@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 700px) {
-  .bicicletas h1 {
+  .bicicletas h1, .bicicletas-modelos {
     padding-left: 12px;
   }
   .bicicletas-modelos {
@@ -64,5 +64,8 @@
   }
   .modelo {
     width: 300px;
+  }
+  .modelo-texto p {
+    margin-bottom: 8px;
   }
 }
