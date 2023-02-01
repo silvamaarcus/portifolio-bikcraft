@@ -17,12 +17,17 @@
   padding: 80px 80px;
 }
 
+.feedback-texto p {
+  color: $c12;
+}
+
 .depoimento {
   font-family: "Merriweather", serif;
   font-style: italic;
   font-size: 2.25rem;
   padding-bottom: 32px;
   position: relative;
+  color: $c12;
 }
 .depoimento::before {
   content: "";
@@ -40,7 +45,7 @@
   width: 40px;
   height: 35px;
   background: url("../../../../src/assets/dec/”.svg");
-  position: absolute;  
+  position: absolute;
   top: 200px;
   left: 500px;
 }

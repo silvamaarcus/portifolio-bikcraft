@@ -5,16 +5,22 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   border: none;  
   overflow-x: hidden;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-li, a {
+a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

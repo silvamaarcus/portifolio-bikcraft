@@ -2,10 +2,11 @@
 @import "./scss/_cores";
 @import "./scss/_tipografia";
 
-@import "../components/header/header";
-@import "./scss/home/intro";
+@import "../components/header";
 @import "../components/_botoes";
+@import "../components/footer";
 
+@import "./scss/home/intro";
 @import "./scss/home/bicicletas";
 @import "./scss/home/qualidades";
 @import "./scss/home/parceiros";
