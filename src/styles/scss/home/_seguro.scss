@@ -66,5 +66,25 @@
   background: url("../../../../src/assets/icons/lista.svg");
   position: absolute;
   top: 28px;
-  left: -24px;  
+  left: -24px;
+}
+
+@media (max-width: 800px) {
+  .container-seguro h1 {
+    padding: 24px;
+    font-size: 2rem;
+  }
+  .container-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .seguro-card-titulo {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .btn-primario, .btn-secundario {
+    padding: 16px;   
+  }
 }

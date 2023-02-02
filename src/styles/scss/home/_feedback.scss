@@ -49,3 +49,24 @@
   top: 200px;
   left: 500px;
 }
+
+@media (max-width: 800px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback img {
+    padding-top: 64px;
+    width: 80%;
+  }
+  .depoimento {    
+    font-size: 1.25rem;    
+  }
+  .depoimento::before {
+    display: none;
+  }
+  .depoimento::after {
+    display: none;
+  }  
+}

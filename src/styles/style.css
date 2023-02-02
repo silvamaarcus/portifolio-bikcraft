@@ -252,36 +252,24 @@ a,
   border-radius: 5px;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    box-shadow: none;
-    padding-bottom: 64px;
+@media (max-width: 800px) {
+  .intro {
+    background-color: #111111;
+    grid-template-columns: 1fr;
+    padding: 32px 0;
   }
   .intro-texto {
     padding: 24px;
   }
-  .intro-texto h1 {
-    width: 600px;
-  }
-  .intro-texto p {
-    width: 500px;
-  }
-  .intro img {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    box-shadow: none;
-    padding-bottom: 64px;
-  }
-  .intro-texto h1 {
+  .intro h1 {
     font-size: 2rem;
-    line-height: 1.125;
   }
-  .intro-texto p {
-    font-size: 1.4rem;
-    line-height: 1.25;
+  .intro p {
+    font-size: 1.25rem;
+    max-width: 740px;
+  }
+  .intro > img {
+    display: none;
   }
 }
 .bicicletas {
@@ -331,9 +319,13 @@ a,
   z-index: -1;
 }
 
-@media (max-width: 700px) {
-  .bicicletas h1, .bicicletas-modelos {
-    padding-left: 12px;
+@media (max-width: 800px) {
+  .bicicletas h1,
+.bicicletas-modelos {
+    padding-left: 24px;
+  }
+  .bicicletas h1 {
+    font-size: 2rem;
   }
   .bicicletas-modelos {
     overflow-x: scroll;
@@ -427,26 +419,35 @@ a,
      object-fit: cover;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .qualidades {
+    margin-top: 32px;
+    background-color: #111111;
     box-shadow: none;
-    margin-top: 64px;
   }
   .containter-qualidades {
+    padding: 32px 24px;
     grid-template-columns: 1fr;
-    padding-left: 12px;
   }
   .qualidades-texto {
-    padding: 40px 0;
+    padding-bottom: 40px;
+  }
+  .qualidades-texto h1 {
+    font-size: 2rem;
   }
   .qualidades-texto p {
     font-size: 1.25rem;
+    max-width: 740px;
   }
-  .qualidades-texto-tipo {
-    grid-template-columns: 1fr;
-  }
-  .containter-qualidades-arte img {
+  .containter-qualidades-arte > img {
     display: none;
+  }
+}
+@media (max-width: 700px) {
+  .qualidades-texto-tipo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 .parceiros {
@@ -484,9 +485,10 @@ a,
   height: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .parceiros h1 {
-    padding-left: 12px;
+    padding: 24px;
+    font-size: 2rem;
   }
 }
 .feedback {
@@ -543,6 +545,26 @@ a,
   left: 500px;
 }
 
+@media (max-width: 800px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback img {
+    padding-top: 64px;
+    width: 80%;
+  }
+  .depoimento {
+    font-size: 1.25rem;
+  }
+  .depoimento::before {
+    display: none;
+  }
+  .depoimento::after {
+    display: none;
+  }
+}
 .seguro {
   background-color: #111111;
   padding: 60px 0;
@@ -614,4 +636,23 @@ a,
   position: absolute;
   top: 28px;
   left: -24px;
+}
+
+@media (max-width: 800px) {
+  .container-seguro h1 {
+    padding: 24px;
+    font-size: 2rem;
+  }
+  .container-card {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .seguro-card-titulo {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .btn-primario, .btn-secundario {
+    padding: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
