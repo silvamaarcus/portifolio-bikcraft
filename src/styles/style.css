@@ -126,7 +126,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
-  line-height: 2;
+  line-height: 1.33;
   text-transform: uppercase;
 }
 
@@ -140,7 +140,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
-  line-height: 2;
+  line-height: 1.33;
   text-transform: uppercase;
 }
 
@@ -154,7 +154,7 @@ img {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
   gap: 40px;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 h3 {
@@ -223,7 +223,7 @@ a,
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
+  align-items: flex-end;
   gap: 40px;
 }
 
