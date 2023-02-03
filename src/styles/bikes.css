@@ -24,6 +24,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 4px;
 }
 
 .text-nav {
@@ -336,7 +337,8 @@ img {
 .bicicleta-alternativa {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .bicicleta-alternativa-container {
@@ -376,10 +378,12 @@ img {
   z-index: -1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .bicicleta-alternativa {
     padding: 0 24px;
   }
+}
+@media (max-width: 400px) {
   .bicicleta-alternativa h1 {
     font-size: 2rem;
     padding-top: 20px;
@@ -387,6 +391,82 @@ img {
   .bicicleta-alternativa-container {
     grid-template-columns: 1fr;
     margin-top: 30px;
+  }
+}
+.propaganda {
+  background: #111111;
+  box-shadow: inset 0 80px #ffffff, inset 0 -80px #000000;
+}
+
+.propaganda-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.propaganda-container img {
+  height: 756px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.propaganda-container-texto h1,
+.propaganda-container-texto p {
+  color: #b2b2b2;
+  margin-bottom: 32px;
+}
+
+.propaganda-container-texto h1 {
+  color: #ffffff !important;
+  width: 14ch;
+}
+
+@media (max-width: 800px) {
+  .propaganda {
+    box-shadow: inset 0 80px #ffffff;
+    padding: 0 24px;
+  }
+  .propaganda-container {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+  .propaganda-container-texto {
+    gap: 12px;
+    padding-bottom: 40px;
+  }
+  .propaganda-container img {
+    height: 378px;
+  }
+}
+@media (max-width: 600px) {
+  .propaganda {
+    margin-top: 32px;
+  }
+  .propaganda-container-texto h1 {
+    font-size: 2rem;
+    width: 400px;
+  }
+  .propaganda-container-texto p {
+    font-size: 1.2rem;
+  }
+  .propaganda-container img {
+    height: 189px;
+  }
+}
+@media (max-width: 400px) {
+  .propaganda {
+    box-shadow: inset 0 80px #111111;
+  }
+  .propaganda-container-texto h1 {
+    padding-top: 32px;
+    font-size: 2rem;
+    width: 360px;
+  }
+  .propaganda-container img {
+    display: none;
   }
 }
 .footer {

@@ -1,7 +1,8 @@
 .bicicleta-alternativa {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .bicicleta-alternativa-container {
@@ -40,16 +41,19 @@
   z-index: -1;
 }
 
-@media (max-width: 400px) {
-  .bicicleta-alternativa{
+@media (max-width: 800px) {
+  .bicicleta-alternativa {
     padding: 0 24px;
   }
+}
+
+@media (max-width: 400px) {
   .bicicleta-alternativa h1 {
     font-size: 2rem;
     padding-top: 20px;
-  } 
+  }
   .bicicleta-alternativa-container {
     grid-template-columns: 1fr;
     margin-top: 30px;
-  }    
+  }
 }
