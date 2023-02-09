@@ -1,0 +1,37 @@
+.escolha div {
+  background: $c10;
+  color: $c4;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr ;
+  gap: 12px;
+}
+
+.div-container li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.div-container li img {
+  width: 24px;
+}
+
+.hidden {
+  display: none;
+}

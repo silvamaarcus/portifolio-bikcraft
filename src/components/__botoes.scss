@@ -4,12 +4,10 @@
   border-radius: 4px;
   background: $g1;
   color: $p5;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.33;
+  font: 700 1.125rem/1.33 "Poppins", sans-serif;  
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-secundario {
@@ -18,10 +16,7 @@
   border-radius: 4px;
   background: $c10;
   color: $c4;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.33;
+  font: 700 1.125rem/1.33 "Poppins", sans-serif;  
   text-transform: uppercase;
+  border: none;
 }

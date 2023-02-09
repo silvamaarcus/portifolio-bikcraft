@@ -7,6 +7,7 @@
 
 body {
   border: none;
+  border-style: none;
   overflow-x: hidden;
 }
 
@@ -28,17 +29,11 @@ img {
 }
 
 .text-nav {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 2;
+  font: 500 1.125rem/2 "Poppins", sans-serif;
 }
 
 .text-h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 1.125;
+  font: 700 4rem/1.125 "Poppins", sans-serif;
 }
 
 .text-h1-span {
@@ -46,45 +41,27 @@ img {
 }
 
 .text-h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.125;
+  font: 700 2rem/1.125 "Poppins", sans-serif;
 }
 
 .text-p-med {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font: 500 1.5rem/1.5 "Roboto", sans-serif;
 }
 
 .text-p-s {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font: 500 1.125rem/1.5 "Roboto", sans-serif;
 }
 
 .text-p-s1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
+  font: 500 1rem/1.5 "Roboto", sans-serif;
 }
 
 .text-p-s2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font: 500 0.875rem/1.5 "Roboto", sans-serif;
 }
 
 .text-p-s3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.5;
+  font: 500 0.75rem/1.5 "Roboto", sans-serif;
 }
 
 .btn-primario {
@@ -93,12 +70,10 @@ img {
   border-radius: 4px;
   background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
   color: #332200;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.33;
+  font: 700 1.125rem/1.33 "Poppins", sans-serif;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-secundario {
@@ -107,12 +82,9 @@ img {
   border-radius: 4px;
   background: #2e2e2e;
   color: #cccccc;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.33;
+  font: 700 1.125rem/1.33 "Poppins", sans-serif;
   text-transform: uppercase;
+  border: none;
 }
 
 .header-intro-bg {

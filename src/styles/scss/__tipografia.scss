@@ -1,61 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,500;0,700;1,500&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,500;0,700;1,500&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap");
 
 .text-nav {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 2;
+  font: 500 1.125rem/2 "Poppins", sans-serif;
 }
 
 .text-h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 1.125;
+  font: 700 4rem/1.125 "Poppins", sans-serif;
 }
 .text-h1-span {
   color: $p1;
 }
 
 .text-h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.125;
+  font: 700 2rem/1.125 "Poppins", sans-serif; 
 }
 
 .text-p-med {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font: 500 1.5rem/1.5 "Roboto", sans-serif;
 }
 
 .text-p-s {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font: 500 1.125rem/1.5 "Roboto", sans-serif; 
 }
 
 .text-p-s1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
+  font: 500 1rem/1.5 "Roboto", sans-serif; 
 }
 
 .text-p-s2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: .875rem;
-  line-height: 1.5;
+  font: 500 .875rem/1.5 "Roboto", sans-serif; 
 }
 
 .text-p-s3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: .75rem;
-  line-height: 1.5;
+  font: 500 .75rem/1.5 "Roboto", sans-serif;
 }

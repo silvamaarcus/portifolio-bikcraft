@@ -1,0 +1,151 @@
+.efeito-bg {
+  background: linear-gradient(to bottom, $c11 50%, $c2 0%);
+}
+
+.orcamento {
+  color: $c0;
+}
+.orcamento p {
+  color: $c5;
+}
+
+.orcamento-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.orcamento-container-texto {
+  margin-bottom: 0;
+}
+
+.quadro {
+  padding-bottom: 120px;
+}
+
+.quadro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.quadro-container-1 {
+  padding: 60px 60px 392px 48px;
+  background: $c12;
+  color: $c0;
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+.servico p,
+.servico span,
+.escolha p {
+  font-family: "Poppins", sans-serif;
+}
+.servico p,
+.escolha p {
+  margin-bottom: 20px;
+  position: relative;
+}
+.servico p::before,
+.escolha p::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 12px;
+  background: $p1;
+  position: absolute;
+  top: 4px;
+  left: -8px;
+}
+
+.servico div {
+  margin-bottom: 40px;
+}
+
+.servico span {
+  margin-right: 20px;
+  background: $c10;
+  color: $c4;
+  padding: 12px 32px 12px 8px;
+  border-radius: 4px;
+}
+
+// Parte branca do formulário
+.quadro-container-2 {
+  padding: 60px 40px 40px 48px;
+  background: $c0;
+  color: $c12;
+}
+
+.quadro-container-2 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.quadro-container-2 form input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: $c1;
+  padding-left: 8px;
+  border: 2px solid $c2;
+}
+
+.grid-all {
+  grid-column: 1/3;
+}
+
+.quadro-container-2 p,
+.termos {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+}
+.quadro-container-2 p::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 12px;
+  background: $p1;
+  position: absolute;
+  top: 4px;
+  left: -8px;
+}
+
+.termos {
+  display: flex;
+  align-items: center;
+}
+.termos input {
+  height: initial !important;
+  margin-right: 10px;
+}
+.termos span {
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .quadro-container {
+    grid-template-columns: 1fr;
+  }
+  .quadro-container-1 {
+    padding: 60px 60px 60px 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .orcamento p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .orcamento h1 {
+    font-size: 2rem;
+  }
+  .servico div {
+    display: flex;
+  }
+}
