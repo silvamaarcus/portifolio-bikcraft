@@ -1,0 +1,151 @@
+.vantagens {
+  background: $c12;
+}
+
+.vantagens h1,
+.vantagens h4 {
+  color: $c0;
+}
+
+.vantagens p {
+  color: $c4;
+}
+
+.vantagens-container,
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.vantagens-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.card-acima {
+  margin-top: 92px;
+  margin-bottom: 32px;
+}
+.card-baixo {
+  margin-bottom: 92px;
+}
+
+.card-acima h4,
+.card-baixo h4 {
+  position: relative;
+  margin: 8px 0;
+}
+.motor::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets/icons/eletrica.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+.carbono::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets/icons/carbono.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+.sustentavel::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/sustentavel.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+.recuperacao::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/rastreador.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+.seguros::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/seguro.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+.velocidade::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/velocidade.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+//Perguntas Frequentes
+.faq {
+  background: $c0;
+}
+
+.perguntas {
+  margin-top: 88px;
+  margin-bottom: 120px;
+}
+
+.pergunta {
+  padding: 12px 0;
+  border-radius: 4px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.pergunta p {
+  position: relative;
+  padding-left: 32px;
+  color: $c11;
+}
+.pergunta p::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: $p1;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.resposta {
+  padding: 0 32px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  color: $c9;
+}
+
+.questao:nth-child(2n + 1) {
+  background: $c1;
+}
+
+@media (max-width: 800px) {
+  .vantagens h1, .faq h1 {
+    font-size: 2rem;
+    padding-left: 24px;
+  }
+
+  .vantagens-cards {
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,500;0,700;1,500&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: none;
+  border-style: none;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.text-nav {
+  font: 500 1.125rem/2 "Poppins", sans-serif;
+}
+
+.text-h1 {
+  font: 700 4rem/1.125 "Poppins", sans-serif;
+}
+
+.text-h1-span {
+  color: #ffbb00;
+}
+
+.text-h2 {
+  font: 700 2rem/1.125 "Poppins", sans-serif;
+}
+
+.text-p-med {
+  font: 500 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.text-p-s {
+  font: 500 1.125rem/1.5 "Roboto", sans-serif;
+}
+
+.text-p-s1 {
+  font: 500 1rem/1.5 "Roboto", sans-serif;
+}
+
+.text-p-s2 {
+  font: 500 0.875rem/1.5 "Roboto", sans-serif;
+}
+
+.text-p-s3 {
+  font: 500 0.75rem/1.5 "Roboto", sans-serif;
+}
+
+.vantagens {
+  background: #000000;
+}
+
+.vantagens h1,
+.vantagens h4 {
+  color: #ffffff;
+}
+
+.vantagens p {
+  color: #cccccc;
+}
+
+.vantagens-container,
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.vantagens-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.card-acima {
+  margin-top: 92px;
+  margin-bottom: 32px;
+}
+
+.card-baixo {
+  margin-bottom: 92px;
+}
+
+.card-acima h4,
+.card-baixo h4 {
+  position: relative;
+  margin: 8px 0;
+}
+
+.motor::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets/icons/eletrica.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.carbono::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets/icons/carbono.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.sustentavel::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/sustentavel.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.recuperacao::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/rastreador.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.seguros::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/seguro.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.velocidade::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../../src/assets//icons/velocidade.svg") no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.faq {
+  background: #ffffff;
+}
+
+.perguntas {
+  margin-top: 88px;
+  margin-bottom: 120px;
+}
+
+.pergunta {
+  padding: 12px 0;
+  border-radius: 4px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.pergunta p {
+  position: relative;
+  padding-left: 32px;
+  color: #111111;
+}
+
+.pergunta p::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: #ffbb00;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.resposta {
+  padding: 0 32px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  color: #404040;
+}
+
+.questao:nth-child(2n+1) {
+  background: #f7f7f7;
+}
+
+@media (max-width: 800px) {
+  .vantagens h1, .faq h1 {
+    font-size: 2rem;
+    padding-left: 24px;
+  }
+  .vantagens-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 24px;
+  }
+}/*# sourceMappingURL=seguros.css.map */
