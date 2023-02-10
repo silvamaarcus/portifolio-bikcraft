@@ -1,0 +1,144 @@
+.mensagem textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  line-height: 1.5;
+  border-radius: 4px;
+  border: 2px solid #ededed;
+  background: #f7f7f7;
+}
+
+.cor {
+  color: #cccccc;
+}
+
+.cor div,
+.padding-redes-p {
+  padding-left: 32px;
+  margin: 32px 0;
+}
+
+.icone {
+  position: relative;
+}
+
+.local::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/local.svg") no-repeat;
+  position: absolute;
+  left: -32px;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/email.svg") no-repeat;
+  position: absolute;
+  left: -32px;
+}
+
+.tel::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/telefone.svg") no-repeat;
+  position: absolute;
+  left: -32px;
+}
+
+.localizacao {
+  background: #ededed;
+}
+
+.localizacao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 32px 0 120px 0;
+}
+
+.card-info {
+  background: #ffffff;
+  border-radius: 0 4px 4px 0;
+  padding: 32px 52px;
+}
+
+.card-info h2 {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.card-info h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: #ffbb00;
+  position: absolute;
+  top: 12px;
+  left: -24px;
+}
+
+.card-info div {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 32px;
+}
+
+.card-info span {
+  padding-left: 16px;
+  position: relative;
+}
+
+.card-info span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 2px;
+  height: 64px;
+  background: #cccccc;
+  left: 0;
+  top: -8px;
+}
+
+.horario {
+  position: relative;
+}
+
+.horario::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/horario.svg") no-repeat;
+  position: absolute;
+  left: -24px;
+}
+
+@media (max-width: 1000px) {
+  .container-cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .localizacao h1,
+  .card-info h2 {
+    font-size: 2rem;
+  }
+  .card-info div {
+    flex-direction: column;
+    gap: 32px;
+  }
+}/*# sourceMappingURL=contato.css.map */
