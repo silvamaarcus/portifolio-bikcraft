@@ -97,7 +97,7 @@
   background: $c0;
 }
 
-.perguntas {
+.faq-lista {
   margin-top: 88px;
   margin-bottom: 120px;
 }
@@ -107,6 +107,9 @@
   border-radius: 4px;
   transition: 0.4s;
   cursor: pointer;
+}
+.questao:nth-child(2n + 1) {
+  background: $c1;
 }
 
 .pergunta p {
@@ -122,30 +125,42 @@
   background: $p1;
   position: absolute;
   left: 12px;
-  top: 12px;
+  top: 8px;
 }
 
 .resposta {
   padding: 0 32px;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.2s ease-out;
+  display: none;  
   color: $c9;
 }
 
-.questao:nth-child(2n + 1) {
-  background: $c1;
-}
 
 @media (max-width: 800px) {
-  .vantagens h1, .faq h1 {
+  .vantagens h1,
+  .faq h1 {
     font-size: 2rem;
     padding-left: 24px;
   }
 
   .vantagens-cards {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 0 24px;
+  }
+}
+
+// Efeitos do JS
+.resposta.ativo {
+  display: block;
+  animation: slideDown 0.5 forwards;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+    opacity: 1;
   }
 }
