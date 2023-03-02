@@ -33,3 +33,25 @@ function iniciarAccordion() {
   }
 }
 iniciarAccordion();
+
+function iniciarAccordionBicicletas() {
+  const accordionItems = document.querySelectorAll(".escolha-item");
+
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".escolha-header");
+    const content = item.querySelector(".escolha-conteudo");
+
+    header.addEventListener('click', () => {
+      // Remove a classe "mostrar-bike" de todos os itens do accordion.
+      accordionItems.forEach((item) => {
+        item.classList.remove("mostrar-bike");
+        item.querySelector(".escolha-conteudo").style.display = "none";
+      });
+      // Adiciona a classe "mostrar-bike" ao item clicado e exibe o conteúdo correspondente.
+      item.classList.add("mostrar-bike");
+      content.style.display = "grid";
+    });
+
+  });
+}
+iniciarAccordionBicicletas();

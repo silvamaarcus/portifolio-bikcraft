@@ -13,14 +13,14 @@
 <body>
   <div class="header-intro-bg">
     <header class="header">
-      <a href="../index.html">
-        <img src="../src/assets/img/bikcraft.svg" alt="Bikcraft" width="135">
+      <a href="./index.html">
+        <img src="./src/assets/img/bikcraft.svg" alt="Bikcraft" width="135">
       </a>
       <nav aria-label="primaria">
         <ul class="header-menu">
-          <li class="text-nav"><a href="../bicicletas.html">Bicicletas</a></li>
-          <li class="text-nav"><a href="../seguros.html">Seguros</a></li>
-          <li class="text-nav"><a href="../contato.html">Contato</a></li>
+          <li class="text-nav"><a href="./bicicletas.html">Bicicletas</a></li>
+          <li class="text-nav"><a href="./seguros.html">Seguros</a></li>
+          <li class="text-nav"><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -59,66 +59,57 @@
             <form>
               <p class="text-p-s2">ESCOLHA A SUA:</p>
 
-              <div class="text-p-s1 card">
-                <div class="info">
+              <div class="escolha-item text-p-s1">
+                <label for="option1" class="escolha-header">
                   <div>
-                    <input type="radio" name="radio-group" value="div1" onclick="showDiv('div1')">
-                    Nimbus Stark
+                    <input type="radio" id="option1" name="escolha-radio"> Nimbus Stark
                   </div>
-                  <span class="preco">R$ 4999</span>
-                </div>
-                <div id="div1" class="hidden">
-                  <div class="div-container">
-                    <ul class="text-p-s1">
-                      <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
-                      <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
-                      <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
-                      <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
-                    </ul>
-                    <img src="./src/assets/img/bicicletas/nimbus.jpg" alt="Nimbus">
-                  </div>
+                  <span>R$ 4999</span>
+                </label>
+                <div class="escolha-conteudo">
+                  <ul class="text-p-s1">
+                    <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
+                    <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
+                    <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
+                    <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
+                  </ul>
+                  <img src="./src/assets/img/bicicletas/nimbus.jpg" alt="Nimbus">
                 </div>
               </div>
 
-              <div class="text-p-s1 card">
-                <div class="info">
+              <div class="escolha-item text-p-s1">
+                <label for="option1" class="escolha-header">
                   <div>
-                    <input type="radio" name="radio-group" value="div2" onclick="showDiv('div2')">
-                    Magic Might
+                    <input type="radio" id="option1" name="escolha-radio"> Magic Might
                   </div>
-                  <span class="preco">R$ 2499</span>
-                </div>
-                <div id="div2" class="hidden">
-                  <div class="div-container">
-                    <ul class="text-p-s1">
-                      <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
-                      <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
-                      <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
-                      <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
-                    </ul>
-                    <img src="./src/assets/img/bicicletas/magic.jpg" alt="Magic">
-                  </div>
+                  <span>R$ 2499</span>
+                </label>
+                <div class="escolha-conteudo">
+                  <ul class="text-p-s1">
+                    <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
+                    <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
+                    <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
+                    <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
+                  </ul>
+                  <img src="./src/assets/img/bicicletas/magic.jpg" alt="Magic">
                 </div>
               </div>
 
-              <div class="text-p-s1 card">
-                <div class="info">
+              <div class="escolha-item text-p-s1">
+                <label for="option1" class="escolha-header">
                   <div>
-                    <input type="radio" name="radio-group" value="div3" onclick="showDiv('div3')">
-                    Nebula Cosmic
+                    <input type="radio" id="option1" name="escolha-radio"> Nebula Cosmic
                   </div>
-                  <span class="preco">R$ 4999</span>
-                </div>
-                <div id="div3" class="hidden">
-                  <div class="div-container">
-                    <ul class="text-p-s3">
-                      <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
-                      <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
-                      <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
-                      <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
-                    </ul>
-                    <img src="./src/assets/img/bicicletas/nebula.jpg" alt="Nebula">
-                  </div>
+                  <span>R$ 3999</span>
+                </label>
+                <div class="escolha-conteudo">
+                  <ul class="text-p-s1">
+                    <li><img src="./src/assets/icons/eletrica.svg">Motor Elétrico</li>
+                    <li><img src="./src/assets/icons/carbono.svg">Fibra de Carbono</li>
+                    <li><img src="./src/assets/icons/velocidade.svg">40 km/h</li>
+                    <li><img src="./src/assets/icons/rastreador.svg">Rastreador</li>
+                  </ul>
+                  <img src="./src/assets/img/bicicletas/nebula.jpg" alt="Nebula">
                 </div>
               </div>
 
@@ -187,7 +178,7 @@
 
   <footer class="footer">
     <div class="footer-container">
-      <img src="../src/assets/img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
+      <img src="./src/assets/img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       <div class="footer-contato">
         <h3 class="text-p-med">Contato</h3>
         <ul class="text-p-s">
@@ -199,13 +190,13 @@
 
         <div class="footer-redes">
           <a href="./">
-            <img src="../src/assets/icons/redes-sociais/instagram.svg" width="32" height="32" alt="Instagram">
+            <img src="./src/assets/icons/redes-sociais/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
           <a href="./">
-            <img src="../src/assets/icons/redes-sociais/facebook.svg" width="32" height="32" alt="Facebook">
+            <img src="./src/assets/icons/redes-sociais/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
           <a href="./">
-            <img src="../src/assets/icons/redes-sociais/youtube.svg" width="32" height="32" alt="Youtube">
+            <img src="./src/assets/icons/redes-sociais/youtube.svg" width="32" height="32" alt="Youtube">
           </a>
         </div>
       </div>
@@ -214,10 +205,10 @@
         <h3 class="text-p-med">Informações</h3>
         <nav>
           <ul class="text-p-s">
-            <li><a href="../bicicletas.html">Bicicletas</a></li>
-            <li><a href="../seguros.html">Seguros</a></li>
-            <li><a href="../contato.html">Contato</a></li>
-            <li><a href="../termos.html">Termos e Condições</a></li>
+            <li><a href="./bicicletas.html">Bicicletas</a></li>
+            <li><a href="./seguros.html">Seguros</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./termos.html">Termos e Condições</a></li>
           </ul>
         </nav>
       </div>
@@ -225,9 +216,8 @@
       <p class="text-p-s copy">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
-  
+
   <script src="./src/js/script.js"></script>
-  <script src="./src/js/orcamento.js"></script>
 </body>
 
 
