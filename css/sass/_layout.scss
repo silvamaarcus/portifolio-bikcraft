@@ -84,7 +84,7 @@ $gutter: 32px;
 
 // Estrutura de container para aplicar na página.
 .container {
-  max-width: $container-xl; // Definindo tamanho padrão para container.
+  max-width: $container-l; // Definindo tamanho padrão para container.
   margin: 0 auto; // Centralizando container.
 
   padding: 128px 24px; // Espaçamento-> eixo y: 128px - eixo x: 24px.
@@ -380,6 +380,30 @@ $gutter: 32px;
 
     .img-hero {
       display: none;
+    }
+  }
+}
+
+// Section Bikes
+// .bikes {
+//   margin: 120px 0;
+// }
+
+.card-bike {
+  h4 {
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 12px;
+      height: 8px;
+
+      transform: translate(-50%, -50%);
+
+      top: 20px;
+      left: -18px;
+
+      background-color: $primary-light;
     }
   }
 }
