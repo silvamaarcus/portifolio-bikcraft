@@ -1,7 +1,7 @@
 // Tipografia d projeto
 
 // Importar fonte desejado: Não esquecer de alterar o font family abaixo!
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
 // Responsividade das fontes para cada tipo de tela, de forma automática.
 
@@ -358,6 +358,10 @@ b {
 
 .text-right {
   text-align: right;
+}
+
+.text-just {
+  text-align: justify;
 }
 
 .h-xl {

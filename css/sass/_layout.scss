@@ -521,3 +521,73 @@ $gutter: 32px;
     }
   }
 }
+
+// Section Depoimento
+
+.depoimento {
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.depoimento-mobile {
+  display: none;
+
+  background-color: $primary-normal;
+
+  @include responsive(s) {
+    display: block;
+  }
+}
+
+.depoimento-info {
+  background-color: $primary-normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding-bottom: 80px;
+  margin-bottom: 4px;
+
+  h4 {
+    font-family: "Merriweather", serif;
+    width: 55%;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+
+      width: 40px;
+      height: 35px;
+
+      position: absolute;
+
+      top: -15px;
+      left: -40px;
+
+      background-image: url("../../svg/aspas-left.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+
+      width: 40px;
+      height: 35px;
+
+      position: absolute;
+
+      bottom: -15px;
+      right: -15px;
+
+      background-image: url("../../svg/aspas-right.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
