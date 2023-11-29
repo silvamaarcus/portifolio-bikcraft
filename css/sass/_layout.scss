@@ -257,6 +257,10 @@ $gutter: 32px;
 // Bordas
 
 // Borda abaixo do elemento.
+.bb-white {
+  border-bottom: 1px solid $white-normal;
+}
+
 .bb-black {
   border-bottom: 1px solid $black-light;
 }
@@ -364,6 +368,10 @@ $gutter: 32px;
   background-color: $black-dark;
 }
 
+.bg-black-dark-soft {
+  background-color: $black-normal;
+}
+
 .shaddow-white {
   box-shadow: inset 0 -80px $white-light;
 
@@ -440,5 +448,76 @@ $gutter: 32px;
 
   @include responsive(s) {
     flex-direction: column;
+  }
+}
+
+// Section Parceiros
+.parceiros {
+  @include responsive(s) {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.fix-line {
+  position: relative;
+
+  ::after {
+    content: "";
+    position: absolute;
+
+    width: 1px;
+    height: 100%;
+
+    left: 50%;
+
+    background-color: $white-normal;
+  }
+}
+
+.parceiros-grid {
+  img {
+    max-width: 140px;
+    height: 38px;
+  }
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 1px;
+    height: 100%;
+
+    left: 25%;
+
+    background-color: $white-normal;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 1px;
+    height: 100%;
+
+    left: 75%;
+
+    background-color: $white-normal;
+  }
+
+  @include responsive(s) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: none !important;
+
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
   }
 }
