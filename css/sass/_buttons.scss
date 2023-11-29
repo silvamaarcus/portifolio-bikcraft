@@ -54,6 +54,7 @@ option {
   border: 0;
 
   @include typeface-2(p3, desktop);
+  font-weight: bold;
 
   cursor: pointer;
 
