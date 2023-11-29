@@ -9,3 +9,5 @@ O Figma é uma ferramenta poderosa de prototipação e design de interfaces de u
 
 # Conclusão
 Trabalhar no desenvolvimento do Bikcraft foi uma experiência enriquecedora para aprimorar minhas habilidades em desenvolvimento web e me familiarizar com o uso do Figma para prototipação e design de interfaces de usuário. Espero que o resultado final do projeto seja útil para aprimorar as habilidades de outras pessoas interessadas em desenvolvimento web e UX/UI design.
+
+Teste de Github...
