@@ -8,7 +8,7 @@ a {
   // fonte: 'p3' | tela: 'desktop'
   @include typeface-2(p3, desktop);
 
-  color: $white-dark;
+  color: $primary-light;
 
   transition: 0.3s ease; // tempo de transição para efeito hover
 
@@ -59,6 +59,26 @@ option {
   cursor: pointer;
 
   transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}
+
+.link {
+  cursor: pointer;
+
+  text-decoration: none; // remover sublinhado
+
+  // estabelecendo tamanho da fonte , config da fonte definida no "_typography.scss":
+  // fonte: 'p3' | tela: 'desktop'
+  @include typeface-2(p3, desktop);
+
+  color: $primary-light;
+
+  border-bottom: 2px solid $primary-light;
+
+  transition: 0.3s ease; // tempo de transição para efeito hover
+
   &:hover {
     opacity: 0.7; // aplicar opacidade
   }

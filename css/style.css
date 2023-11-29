@@ -14,7 +14,7 @@
 }
 
 .color-primary {
-  color: #FFBB00;
+  color: #FFBB00 !important;
 }
 
 .color-gradient {
@@ -531,13 +531,29 @@
   }
 }
 
+.shaddow-white-full {
+  box-shadow: inset 0 -80px #ffffff, inset 0 80px #ffffff;
+}
+@media screen and (max-width: 960px) {
+  .shaddow-white-full {
+    box-shadow: none;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding-bottom: 24px;
   }
   .hero .img-hero {
     display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bikes h1 {
+    text-align: center;
   }
 }
 
@@ -550,6 +566,26 @@
   top: 20px;
   left: -18px;
   background-color: #FFBB00;
+}
+
+@media screen and (max-width: 960px) {
+  .tecnologia {
+    text-align: center;
+  }
+  .tecnologia .fix-title {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: bold;
+  }
+}
+
+.tecnologia-info {
+  gap: 40px;
+}
+@media screen and (max-width: 960px) {
+  .tecnologia-info {
+    flex-direction: column;
+  }
 }
 
 .s-0 {
@@ -1646,12 +1682,12 @@ nav .menu a {
 }
 
 .icon {
-  max-width: 64px;
+  max-width: 24px;
   transition: 0.5s ease;
 }
 @media screen and (max-width: 960px) {
   .icon {
-    max-width: 56px;
+    max-width: 48px;
   }
 }
 .icon:hover {
@@ -1698,7 +1734,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   font-weight: 200;
-  color: #d8dbe3;
+  color: #FFBB00;
   transition: 0.3s ease;
 }
 a:hover {
@@ -1746,5 +1782,20 @@ option {
   transition: 0.3s ease;
 }
 .btn:hover {
+  opacity: 0.7;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+  color: #FFBB00;
+  border-bottom: 2px solid #FFBB00;
+  transition: 0.3s ease;
+}
+.link:hover {
   opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */

@@ -372,11 +372,21 @@ $gutter: 32px;
   }
 }
 
+.shaddow-white-full {
+  box-shadow: inset 0 -80px $white-light, inset 0 80px $white-light;
+
+  @include responsive(s) {
+    box-shadow: none;
+  }
+}
+
 // Section Hero
 .hero {
   @include responsive(s) {
     flex-direction: column;
     text-align: center;
+
+    padding-bottom: 24px;
 
     .img-hero {
       display: none;
@@ -384,10 +394,14 @@ $gutter: 32px;
   }
 }
 
-// Section Bikes
-// .bikes {
-//   margin: 120px 0;
-// }
+//Section Bikes
+.bikes {
+  @include responsive(s) {
+    h1 {
+      text-align: center;
+    }
+  }
+}
 
 .card-bike {
   h4 {
@@ -405,5 +419,26 @@ $gutter: 32px;
 
       background-color: $primary-light;
     }
+  }
+}
+
+// Section Tecnlogia
+.tecnologia {
+  @include responsive(s) {
+    text-align: center;
+
+    .fix-title {
+      font-size: 48px;
+      line-height: 120%;
+      font-weight: bold;
+    }
+  }
+}
+
+.tecnologia-info {
+  gap: 40px;
+
+  @include responsive(s) {
+    flex-direction: column;
   }
 }

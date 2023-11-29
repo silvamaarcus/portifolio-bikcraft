@@ -1,11 +1,11 @@
 // Tamanho de icones
 
 .icon {
-  max-width: 64px;
+  max-width: 24px;
   transition: 0.5s ease;
 
   @include responsive(s) {
-    max-width: 56px;
+    max-width: 48px;
   }
 
   &:hover {
