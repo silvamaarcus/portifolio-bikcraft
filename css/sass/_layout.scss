@@ -84,7 +84,7 @@ $gutter: 32px;
 
 // Estrutura de container para aplicar na página.
 .container {
-  max-width: $container-l; // Definindo tamanho padrão para container.
+  max-width: $container-xl; // Definindo tamanho padrão para container.
   margin: 0 auto; // Centralizando container.
 
   padding: 128px 24px; // Espaçamento-> eixo y: 128px - eixo x: 24px.
@@ -297,7 +297,7 @@ $gutter: 32px;
 
 // Tamanhos para logos
 .logo {
-  max-width: 64px;
+  max-width: 132px;
   min-width: 48px;
 }
 
