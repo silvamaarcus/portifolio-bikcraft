@@ -257,6 +257,10 @@ $gutter: 32px;
 // Bordas
 
 // Borda abaixo do elemento.
+.bb-black-soft {
+  border-bottom: 1px solid #111;
+}
+
 .bb-white {
   border-bottom: 1px solid $white-normal;
 }
