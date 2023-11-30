@@ -705,6 +705,37 @@
   background-size: cover;
 }
 
+.seguros-card {
+  padding: 32px 32px 32px 64px;
+  border: 0;
+  border-radius: 4px;
+}
+@media screen and (max-width: 960px) {
+  .seguros-card .seguros-title {
+    justify-content: center;
+  }
+  .seguros-card .seguros-title h3, .seguros-card .seguros-title blockquote {
+    text-align: center;
+  }
+}
+.seguros-card .seguros-beneficios li {
+  list-style: none;
+  position: relative;
+}
+.seguros-card .seguros-beneficios li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../svg/lista.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  top: 15px;
+  left: -15px;
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1903,6 +1934,24 @@ option {
   transition: 0.3s ease;
 }
 .btn:hover {
+  opacity: 0.7;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 16px 32px;
+  color: #fff;
+  background: #2E2E2E !important;
+  border-radius: 4px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-2:hover {
   opacity: 0.7;
 }
 
