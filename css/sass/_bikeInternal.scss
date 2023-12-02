@@ -18,7 +18,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 
-  @include responsive (s) {
+  @include responsive(s) {
     grid-template-columns: 1fr;
   }
+}
+
+.bike-datasheet {
+  border: 0;
+  border-radius: 4px;
 }

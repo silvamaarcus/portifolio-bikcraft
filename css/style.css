@@ -1920,6 +1920,11 @@ nav .menu a {
   }
 }
 
+.bike-datasheet {
+  border: 0;
+  border-radius: 4px;
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;
