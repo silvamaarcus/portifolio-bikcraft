@@ -1896,13 +1896,37 @@ nav .menu a {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .bike-action {
+    flex-wrap: wrap;
+  }
+  .bike-action .pills {
+    margin-top: 16px;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+.bike-internal-tech {
+  border: 0;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media screen and (max-width: 960px) {
+  .bike-internal-tech {
+    grid-template-columns: 1fr;
+  }
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;
 }
 @media screen and (max-width: 960px) {
   .icon {
-    max-width: 48px;
+    max-width: 24px;
   }
 }
 .icon:hover {
