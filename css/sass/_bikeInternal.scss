@@ -27,3 +27,11 @@
   border: 0;
   border-radius: 4px;
 }
+
+.seguros-mobile {
+  @include responsive(s) {
+    img {
+      display: none;
+    }
+  }
+}

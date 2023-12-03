@@ -1925,6 +1925,12 @@ nav .menu a {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 960px) {
+  .seguros-mobile img {
+    display: none;
+  }
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;
