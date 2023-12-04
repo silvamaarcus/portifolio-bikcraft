@@ -28,11 +28,12 @@ select,
 option,
 textarea {
   padding: 10px 12px;
-  background-color: $black-light;
+  background-color: #F7F7F7;
   border: 0; // remover bordas
   border-radius: 4px;
+  border-color: #EDEDED;
   width: 100%; // sempre ocupar a largura total do 'pai'
-  color: $white-light;
+  color: #717171;
   @include typeface-2(p3, desktop);
 }
 

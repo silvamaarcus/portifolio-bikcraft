@@ -526,6 +526,10 @@
   background-color: rgba(27, 105, 210, 0.2);
 }
 
+.bg-white-light {
+  background-color: #ffffff;
+}
+
 .bg-black-dark {
   background-color: #000000;
 }
@@ -1931,6 +1935,72 @@ nav .menu a {
   }
 }
 
+form {
+  padding: 56px;
+}
+@media screen and (max-width: 960px) {
+  form {
+    padding: 24px !important;
+  }
+}
+
+.table-contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+@media screen and (max-width: 960px) {
+  .table-contact {
+    grid-template-columns: 1fr;
+  }
+  .table-contact .form-wrap {
+    flex-wrap: wrap;
+  }
+  .table-contact .form-mobile {
+    margin-left: 0 !important;
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
+.icon-local::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -32px;
+  background-image: url("../../svg/icon-local.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-email::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -32px;
+  background-image: url("../../svg/icon-email.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-telefone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -32px;
+  background-image: url("../../svg/icon-telefone.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;
@@ -2000,11 +2070,12 @@ select,
 option,
 textarea {
   padding: 10px 12px;
-  background-color: #2E2E2E;
+  background-color: #F7F7F7;
   border: 0;
   border-radius: 4px;
+  border-color: #EDEDED;
   width: 100%;
-  color: #ffffff;
+  color: #717171;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 26px;

@@ -1,0 +1,80 @@
+form {
+  padding: 56px;
+
+  @include responsive(s) {
+    padding: 24px !important;
+  }
+}
+
+.table-contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+
+    .form-wrap {
+      flex-wrap: wrap;
+    }
+
+    .form-mobile {
+      margin-left: 0 !important;
+      margin-top: 24px;
+      width: 100%;
+    }
+  }
+}
+
+.icon-local {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    top: 2px;
+    left: -32px;
+
+    background-image: url("../../svg/icon-local.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-email {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    top: 2px;
+    left: -32px;
+
+    background-image: url("../../svg/icon-email.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-telefone {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    top: 2px;
+    left: -32px;
+
+    background-image: url("../../svg/icon-telefone.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
