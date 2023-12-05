@@ -2001,6 +2001,30 @@ form {
   background-size: cover;
 }
 
+.local::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 16px;
+  left: -18px;
+  background-color: #FFBB00;
+}
+
+.clock::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: -26px;
+  background-image: url("../../svg/icon-relogio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;
