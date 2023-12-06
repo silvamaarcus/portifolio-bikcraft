@@ -427,7 +427,7 @@
 }
 
 .bb-white {
-  border-bottom: 1px solid #e8ebf0;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .bb-black {
@@ -619,7 +619,7 @@
   width: 1px;
   height: 100%;
   left: 50%;
-  background-color: #e8ebf0;
+  background-color: #f7f7f7;
 }
 
 .parceiros-grid {
@@ -635,7 +635,7 @@
   width: 1px;
   height: 100%;
   left: 25%;
-  background-color: #e8ebf0;
+  background-color: #f7f7f7;
 }
 .parceiros-grid::before {
   content: "";
@@ -643,7 +643,7 @@
   width: 1px;
   height: 100%;
   left: 75%;
-  background-color: #e8ebf0;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 960px) {
   .parceiros-grid {
@@ -696,7 +696,7 @@
   position: absolute;
   top: -15px;
   left: -40px;
-  background-image: url("../../svg/aspas-left.svg");
+  background-image: url("../svg/aspas-left.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -708,7 +708,7 @@
   position: absolute;
   bottom: -15px;
   right: -15px;
-  background-image: url("../../svg/aspas-right.svg");
+  background-image: url("../svg/aspas-right.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -736,7 +736,7 @@
   position: absolute;
   width: 13px;
   height: 9px;
-  background-image: url("../../svg/lista.svg");
+  background-image: url("../svg/lista.svg");
   background-repeat: no-repeat;
   background-size: cover;
   transform: translate(-50%, -50%);
@@ -1686,7 +1686,7 @@ span {
 }
 
 .letter-h1 {
-  color: #e8ebf0;
+  color: #f7f7f7;
   letter-spacing: 1px;
   text-transform: none;
   font-family: "Poppins", sans-serif;
@@ -1740,7 +1740,7 @@ b {
 }
 
 .h-xl {
-  color: #e8ebf0;
+  color: #f7f7f7;
   font-family: "Poppins", sans-serif;
   font-size: 120px;
   line-height: 120%;
@@ -1758,7 +1758,7 @@ b {
 }
 
 .h-l {
-  color: #e8ebf0;
+  color: #f7f7f7;
   font-family: "Poppins", sans-serif;
   font-size: 120px;
   line-height: 120%;
@@ -2021,6 +2021,85 @@ form {
   top: 3px;
   left: -26px;
   background-image: url("../../svg/icon-relogio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion-container div:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.accordion-item {
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.accordion-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 30px;
+  left: 15px;
+  background-color: #FFBB00;
+}
+.accordion-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  cursor: pointer;
+  top: 30px;
+  right: 15px;
+  background-image: url("../svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion-item.active::before {
+  background-image: url("../svg/arrow-up.svg");
+}
+
+.accordion-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-top: 16px;
+  background-color: transparent !important;
+}
+
+.q {
+  position: relative;
+  cursor: pointer;
+}
+.q::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 11px;
+  left: -20px;
+  background-color: #FFBB00;
+}
+.q::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  cursor: pointer;
+  top: 11px;
+  right: -20px;
+  background-image: url("../svg/arrow-down.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
