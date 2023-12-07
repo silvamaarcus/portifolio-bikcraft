@@ -5,7 +5,7 @@ import Bikes from "./Bikes";
 import Tecnologia from "./Tecnologia";
 import Parceiros from "./Parceiros";
 import Depoimento from "./Depoimento";
-import Seguro from "../Seguro";
+import Seguro from "./Seguro";
 import Footer from "../Footer";
 
 const Home = () => {
@@ -18,7 +18,6 @@ const Home = () => {
       <Tecnologia />
       <Parceiros />
       <Depoimento />
-
       <Seguro />
 
       <Footer />

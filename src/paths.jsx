@@ -10,6 +10,7 @@ import {
 import Home from "./pages/Home";
 import Bicicletas from "./pages/Bicicletas";
 import Seguros from "./pages/Seguros";
+import Contato from "./pages/Contato";
 
 const Paths = () => {
   return (
@@ -21,6 +22,7 @@ const Paths = () => {
           <Route path="/" element={<Home />} />
           <Route path="/bicicletas" element={<Bicicletas />} />
           <Route path="/seguros" element={<Seguros />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </BrowserRouter>
     </>
