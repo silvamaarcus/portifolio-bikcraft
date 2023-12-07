@@ -6,6 +6,9 @@ import icon_instagram from "../../svg/icon-instagram.svg";
 import icon_facebook from "../../svg/icon-facebook.svg";
 import icon_youtube from "../../svg/icon-youtube.svg";
 
+//Link
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -13,7 +16,9 @@ const Footer = () => {
         <footer className="container">
           <div className="row">
             <div className="grid-2">
-              <img src={logo} className="logo" alt="Bikcraft" />
+              <Link to="/">
+                <img src={logo} className="logo" alt="Bikcraft" />
+              </Link>
             </div>
 
             <div className="grid-1 disappear"></div>
@@ -31,15 +36,15 @@ const Footer = () => {
               </div>
 
               <div className="flex-start-row mt-3">
-                <a href="">
+                <Link to="">
                   <img src={icon_instagram} className="pr-4" />
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                   <img src={icon_facebook} className="pr-4" />
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                   <img src={icon_youtube} className="pr-4" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -49,24 +54,24 @@ const Footer = () => {
               <h5 className="color-white uppercase">Informações</h5>
               <ul className="mt-1 footer-menu">
                 <li>
-                  <a href="" className="color-gray">
+                  <Link to="/bicicletas" className="color-gray">
                     Bicicletas
-                  </a>
+                  </Link>
                 </li>
                 <li className="py-1">
-                  <a href="" className="color-gray">
+                  <Link to="/seguros" className="color-gray">
                     Seguros
-                  </a>
+                  </Link>
                 </li>
                 <li className="py-1">
-                  <a href="" className="color-gray">
+                  <Link to="/contato" className="color-gray">
                     Contato
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="" className="color-gray">
+                  <Link to="/termos" className="color-gray">
                     Termos e Condições
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Bicicletas from "./pages/Bicicletas";
 import Seguros from "./pages/Seguros";
 import Contato from "./pages/Contato";
+import Termos from "./pages/Termos";
 
 const Paths = () => {
   return (
@@ -23,6 +24,7 @@ const Paths = () => {
           <Route path="/bicicletas" element={<Bicicletas />} />
           <Route path="/seguros" element={<Seguros />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/termos" element={<Termos />} />
         </Routes>
       </BrowserRouter>
     </>
