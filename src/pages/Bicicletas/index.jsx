@@ -13,6 +13,9 @@ import icon_carbono from "../../svg/icon-carbono.svg";
 import icon_velocidade from "../../svg/icon-velocidade.svg";
 import icon_rastreador from "../../svg/icon-rastreador.svg";
 
+// Link
+import { Link } from "react-router-dom";
+
 const Bicicletas = () => {
   return (
     <>
@@ -63,9 +66,9 @@ const Bicicletas = () => {
               </div>
             </div>
             <div className="flex-end-row btn-more">
-              <a href="" className="btn uppercase">
+              <Link to="/bicicletas/nimbus" className="btn uppercase">
                 Mais sobre ➔
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -103,9 +106,9 @@ const Bicicletas = () => {
               </div>
             </div>
             <div className="flex-end-row btn-more">
-              <a href="" className="btn uppercase">
+              <Link to="/bicicletas/magic" className="btn uppercase">
                 Mais sobre ➔
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -143,9 +146,9 @@ const Bicicletas = () => {
               </div>
             </div>
             <div class="flex-end-row btn-more">
-              <a href="" class="btn uppercase">
+              <Link to="/bicicletas/nebula" className="btn uppercase">
                 Mais sobre ➔
-              </a>
+              </Link>
             </div>
           </div>
         </div>
