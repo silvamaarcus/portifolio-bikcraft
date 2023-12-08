@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
 * {
   padding: 0;
@@ -2111,6 +2112,86 @@ form {
   background-image: url("../svg/arrow-down.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.choice-product {
+  padding: 56px;
+}
+.choice-product h6::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  top: 6px;
+  left: -16px;
+  background-color: #FFBB00;
+}
+@media screen and (max-width: 960px) {
+  .choice-product .prev-choice {
+    flex-wrap: wrap;
+  }
+}
+.choice-product .choice {
+  background-color: #2E2E2E;
+  padding: 16px 61px 16px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.choice-product .choice p {
+  color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media screen and (max-width: 960px) {
+  .choice-product .choice {
+    margin-left: 0 !important;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+}
+.choice-product .choice.selected {
+  background-color: #ffffff;
+  padding: 16px 61px 16px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.choice-product .choice.selected p {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.choice-bike-container {
+  background-color: #2E2E2E;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.choice-bike-container .choice-bike {
+  background-color: #2E2E2E;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  padding: 16px;
+  cursor: pointer;
+}
+.choice-bike-container .choice-bike p {
+  color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.choice-bike-container .choice-bike.selected {
+  background-color: #ffffff;
+}
+.choice-bike-container .choice-bike.selected p {
+  color: #000000;
+}
+
+.choice-bike-container.active {
+  background-color: #ffffff;
 }
 
 .icon {

@@ -17,6 +17,8 @@ import Termos from "./pages/Termos";
 import Nimbus from "./pages/Bicicletas/Interna";
 import Magic from "./pages/Bicicletas/Interna/Magic";
 import Nebula from "./pages/Bicicletas/Interna/Nebula";
+// Carrinho
+import Carrinho from "./pages/Bicicletas/Carrinho";
 
 const Paths = () => {
   return (
@@ -31,6 +33,8 @@ const Paths = () => {
           <Route path="/bicicletas/nimbus" element={<Nimbus />} />
           <Route path="/bicicletas/magic" element={<Magic />} />
           <Route path="/bicicletas/nebula" element={<Nebula />} />
+
+          <Route path="/carrinho" element={<Carrinho />} />
 
           <Route path="/seguros" element={<Seguros />} />
           <Route path="/contato" element={<Contato />} />
