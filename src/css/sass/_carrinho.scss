@@ -60,7 +60,7 @@
 .choice-bike-container {
   background-color: $black-light;
   display: flex;
-  align-items: center;
+  align-items: start;
 
   margin-top: 24px;
 
@@ -87,7 +87,15 @@
       color: $black-dark;
     }
   }
+
+  .bike-info {
+    display: none;
+  }
 }
 .choice-bike-container.active {
-  background-color: $white-light
+  background-color: $white-light;
+
+  .bike-info {
+    display: inline-flex;
+  }
 }

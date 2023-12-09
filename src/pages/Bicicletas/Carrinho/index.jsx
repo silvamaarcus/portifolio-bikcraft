@@ -2,6 +2,17 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
 
+// Imagens
+import bike_nimbus_landscape from "../../../img/bike-nimbus-stark-landscape.png";
+import bike_magic_landscape from "../../../img/bike-magic-might-landscape.png";
+import bike_nebula_landscape from "../../../img/bike-nebula-cosmic-landscape.png";
+
+// Icons
+import icon_eletrica from "../../../svg/icon-eletrica.svg";
+import icon_carbono from "../../../svg/icon-carbono.svg";
+import icon_velocidade from "../../../svg/icon-velocidade.svg";
+import icon_rastreador from "../../../svg/icon-rastreador.svg";
+
 import React, { useState } from "react";
 
 const Carrinho = () => {
@@ -74,8 +85,12 @@ const Carrinho = () => {
                 <h6 className="h7 uppercase bold color-gray relative ml-2">
                   Escolha a sua:
                 </h6>
-
-                <div className={`choice-bike-container ${escolhaBike === "nimbus" ? "active" : ""}`}>
+                {/* Nimbus */}
+                <div
+                  className={`choice-bike-container flex-column ${
+                    escolhaBike === "nimbus" ? "active" : ""
+                  }`}
+                >
                   <label
                     className={`choice-bike ${
                       escolhaBike === "nimbus" ? "selected" : ""
@@ -92,6 +107,139 @@ const Carrinho = () => {
                     />
                     <p className="ml-3">Nimbus Stark</p>
                   </label>
+
+                  <div className="bike-info flex-start-row pb-2">
+                    <div className="mx-2 w-50">
+                      <div className="flex-start-row">
+                        <img src={icon_eletrica} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Motor Elétrico
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_carbono} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Fibra de Carbono
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_velocidade} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">40 km/h</h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_rastreador} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">Rastreador</h6>
+                      </div>
+                    </div>
+
+                    <div className="mx-2 w-50">
+                      <img src={bike_nimbus_landscape} alt="Nimbus Stark" />
+                    </div>
+                  </div>
+                </div>
+                {/* Magic */}
+                <div
+                  className={`choice-bike-container flex-column ${
+                    escolhaBike === "magic" ? "active" : ""
+                  }`}
+                >
+                  <label
+                    className={`choice-bike ${
+                      escolhaBike === "magic" ? "selected" : ""
+                    }`}
+                    htmlFor="magic"
+                  >
+                    <input
+                      type="radio"
+                      id="magic"
+                      name="escolhaBike"
+                      value="magic"
+                      checked={escolhaBike === "magic"}
+                      onChange={handleEscolhaBike}
+                    />
+                    <p className="ml-3">Magic Might</p>
+                  </label>
+
+                  <div className="bike-info flex-start-row pb-2">
+                    <div className="mx-2 w-50">
+                      <div className="flex-start-row">
+                        <img src={icon_eletrica} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Motor Elétrico
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_carbono} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Fibra de Carbono
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_velocidade} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">40 km/h</h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_rastreador} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">Rastreador</h6>
+                      </div>
+                    </div>
+
+                    <div className="mx-2 w-50">
+                      <img src={bike_magic_landscape} alt="Nimbus Stark" />
+                    </div>
+                  </div>
+                </div>
+                {/* Nebula */}
+                <div
+                  className={`choice-bike-container flex-column ${
+                    escolhaBike === "nebula" ? "active" : ""
+                  }`}
+                >
+                  <label
+                    className={`choice-bike ${
+                      escolhaBike === "nebula" ? "selected" : ""
+                    }`}
+                    htmlFor="nebula"
+                  >
+                    <input
+                      type="radio"
+                      id="nebula"
+                      name="escolhaBike"
+                      value="nebula"
+                      checked={escolhaBike === "nebula"}
+                      onChange={handleEscolhaBike}
+                    />
+                    <p className="ml-3">Nebula Cosmic</p>
+                  </label>
+
+                  <div className="bike-info flex-start-row pb-2">
+                    <div className="mx-2 w-50">
+                      <div className="flex-start-row">
+                        <img src={icon_eletrica} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Motor Elétrico
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_carbono} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">
+                          Fibra de Carbono
+                        </h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_velocidade} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">40 km/h</h6>
+                      </div>
+                      <div className="flex-start-row mt-1">
+                        <img src={icon_rastreador} className="icon" />
+                        <h6 className="color-black ml-1 h7 bold">Rastreador</h6>
+                      </div>
+                    </div>
+
+                    <div className="mx-2 w-50">
+                      <img src={bike_nebula_landscape} alt="Nimbus Stark" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
