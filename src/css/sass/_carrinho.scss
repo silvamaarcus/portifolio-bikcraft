@@ -99,3 +99,23 @@
     display: inline-flex;
   }
 }
+
+.personal-data {
+  padding: 60px 40px 40px 48px;
+
+  h6 {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      width: 4px;
+      height: 8px;
+
+      top: 6px;
+      left: -16px;
+
+      background-color: $primary-light;
+    }
+  }
+}

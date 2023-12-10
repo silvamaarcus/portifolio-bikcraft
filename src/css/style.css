@@ -2200,6 +2200,20 @@ form {
   display: inline-flex;
 }
 
+.personal-data {
+  padding: 60px 40px 40px 48px;
+}
+.personal-data h6::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  top: 6px;
+  left: -16px;
+  background-color: #FFBB00;
+}
+
 .icon {
   max-width: 24px;
   transition: 0.5s ease;

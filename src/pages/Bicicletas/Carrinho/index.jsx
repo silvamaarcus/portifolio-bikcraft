@@ -14,6 +14,7 @@ import icon_velocidade from "../../../svg/icon-velocidade.svg";
 import icon_rastreador from "../../../svg/icon-rastreador.svg";
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Carrinho = () => {
   // Estado para armazenar o valor selecionado: Bikcraft ou Seguro
@@ -32,7 +33,7 @@ const Carrinho = () => {
   return (
     <>
       <Header />
-      <section className="bg-black-dark-soft shaddow-white">
+      <section className="bg-black-dark-soft shaddow-white mb-9">
         <div className="container p-0">
           <h5 className="color-gray uppercase mt-8">Cotações no seu email</h5>
           <h1 className="color-white bold mb-8">
@@ -244,8 +245,11 @@ const Carrinho = () => {
               </div>
             </div>
 
-            <div className="bg-white-light">
-              <form>
+            <div className="bg-white-light personal-data">
+              <h6 className="h7 uppercase bold color-black relative ml-2">
+                Dados pessoais
+              </h6>
+              <form className="mt-3 p-0">
                 <div className="flex form-wrap">
                   <div className="w-50 form-mobile">
                     <label for="nome">
@@ -259,16 +263,28 @@ const Carrinho = () => {
                     />
                   </div>
                   <div className="ml-3 w-50 form-mobile">
-                    <label for="tel">
-                      <p className="color-black bold">Telefone</p>
+                    <label for="sobrenome">
+                      <p className="color-black bold">Sobrenome</p>
                     </label>
                     <input
-                      type="number"
-                      name="tel"
-                      id="tel"
-                      placeholder="(21) 9999-9999"
+                      type="text"
+                      name="sobrenome"
+                      id="sobrenome"
+                      placeholder="Seu sobrenome"
                     />
                   </div>
+                </div>
+
+                <div className="my-3">
+                  <label for="cpf">
+                    <p className="bold color-black">CPF</p>
+                  </label>
+                  <input
+                    type="number"
+                    name="cpf"
+                    id="cpf"
+                    placeholder="000.000.000-00"
+                  />
                 </div>
 
                 <div className="my-3">
@@ -282,22 +298,70 @@ const Carrinho = () => {
                     placeholder="contato@email.com"
                   />
                 </div>
+              </form>
 
-                <div className="my-3">
-                  <label for="messenger">
-                    <p className="color-black bold">Mensagem</p>
-                  </label>
-                  <textarea
-                    name="messenger"
-                    id="messenger"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
+              <h6 className="h7 uppercase bold color-black relative ml-2">
+                Entrega
+              </h6>
+              <form className="mt-3 p-0">
+                <div className="flex form-wrap mt-3">
+                  <div className="w-50 form-mobile">
+                    <label for="cep">
+                      <p className="bold color-black">CEP</p>
+                    </label>
+                    <input
+                      type="number"
+                      name="cep"
+                      id="cep"
+                      placeholder="00000-000"
+                    />
+                  </div>
+                  <div className="ml-3 w-50 form-mobile">
+                    <label for="numero">
+                      <p className="color-black bold">Número</p>
+                    </label>
+                    <input type="number" name="numero" id="numero" />
+                  </div>
                 </div>
 
-                <a href="" className="btn uppercase">
-                  Enviar Mensagem
-                </a>
+                <div className="flex form-wrap mt-3">
+                  <div className="w-50 form-mobile">
+                    <label for="logradouro">
+                      <p className="bold color-black">Logradouro</p>
+                    </label>
+                    <input
+                      type="text"
+                      name="logradouro"
+                      id="logradouro"
+                      placeholder="Rua, avenida..."
+                    />
+                  </div>
+                  <div className="ml-3 w-50 form-mobile">
+                    <label for="bairro">
+                      <p className="color-black bold">Bairro</p>
+                    </label>
+                    <input type="text" name="bairro" id="bairro" />
+                  </div>
+                </div>
+
+                <div className="flex form-wrap mt-3">
+                  <div className="w-50 form-mobile">
+                    <label for="cidade">
+                      <p className="bold color-black">Cidade</p>
+                    </label>
+                    <input type="text" name="cidade" id="cidade" />
+                  </div>
+                  <div className="ml-3 w-50 form-mobile">
+                    <label for="estado">
+                      <p className="color-black bold">Estado</p>
+                    </label>
+                    <input type="text" name="estado" id="estado" />
+                  </div>
+                </div>
+
+                <Link to="" className="btn uppercase mt-4">
+                  Solicitar orçamento
+                </Link>
               </form>
             </div>
           </div>

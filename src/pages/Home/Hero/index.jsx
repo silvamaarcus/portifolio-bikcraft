@@ -1,6 +1,9 @@
 // Imagens
 import img_hero from "../../../img/img-hero.png";
 
+// Link 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <>
@@ -16,9 +19,9 @@ const Hero = () => {
                 medida para o cliente. Explore o mundo na sua velocidade com a
                 Bikcraft.
               </p>
-              <a href="" className="btn uppercase mt-3">
+              <Link to="/bicicletas" className="btn uppercase mt-3">
                 Selecione a sua
-              </a>
+              </Link>
             </div>
             <div className="grid-6 p-0 mb-0 img-hero">
               <img src={img_hero} alt="Bike" />
