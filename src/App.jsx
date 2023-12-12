@@ -1,4 +1,4 @@
-import Paths from "./Paths";
+import Paths from "./paths";
 
 function App() {
   return (
