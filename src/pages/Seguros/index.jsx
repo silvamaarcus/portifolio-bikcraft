@@ -12,6 +12,9 @@ import icon_rastreador from "../../svg/icon-rastreador.svg";
 import icon_sustentavel from "../../svg/icon-sustentavel.svg";
 import icon_seguranca from "../../svg/icon-seguro.svg";
 
+// Link
+import { Link } from "react-router-dom";
+
 const AccordionItem = ({ title, content, isActive, onClick }) => (
   <div
     className={`accordion-item ${isActive ? "active" : ""}`}
@@ -78,9 +81,9 @@ const Seguros = () => {
                   <li className="p1 color-white mt-3">Assistência técnica</li>
                   <li className="p1 color-white mt-3">Suporte 08h às 18h</li>
                   <li className="p1 color-white mt-3">Cobertura estadual</li>
-                  <a href="" className="btn-2 mt-4">
+                  <Link to="/carrinho" className="btn-2 mt-4">
                     INSCREVA-SE
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -106,9 +109,9 @@ const Seguros = () => {
                   <li className="p1 color-white mt-3">
                     Acesso ao Clube Bikcraft
                   </li>
-                  <a href="" className="btn mt-4">
+                  <Link to="/carrinho" className="btn mt-4">
                     INSCREVA-SE
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>

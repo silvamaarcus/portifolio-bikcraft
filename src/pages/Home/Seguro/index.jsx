@@ -1,3 +1,6 @@
+// Link
+import { Link } from "react-router-dom";
+
 const Seguro = () => {
   return (
     <>
@@ -25,9 +28,9 @@ const Seguro = () => {
                   <li className="p1 color-white mt-3">Assistência técnica</li>
                   <li className="p1 color-white mt-3">Suporte 08h às 18h</li>
                   <li className="p1 color-white mt-3">Cobertura estadual</li>
-                  <a href="" className="btn-2 mt-4">
+                  <Link to="/seguros" className="btn-2 mt-4">
                     INSCREVA-SE
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -53,9 +56,9 @@ const Seguro = () => {
                   <li className="p1 color-white mt-3">
                     Acesso ao Clube Bikcraft
                   </li>
-                  <a href="" className="btn mt-4">
+                  <Link to="/seguros" className="btn mt-4">
                     INSCREVA-SE
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>
