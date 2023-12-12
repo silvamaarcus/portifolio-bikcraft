@@ -13,8 +13,12 @@ import icon_carbono from "../../../svg/icon-carbono.svg";
 import icon_velocidade from "../../../svg/icon-velocidade.svg";
 import icon_rastreador from "../../../svg/icon-rastreador.svg";
 
-import React, { useState } from "react";
+// Hooks
+import React, { useState, useEffect } from "react";
+// Link
 import { Link } from "react-router-dom";
+// Axios
+import axios from "axios";
 
 const Carrinho = () => {
   // Estado para armazenar o valor selecionado: Bikcraft ou Seguro
@@ -28,6 +32,90 @@ const Carrinho = () => {
 
   const handleEscolhaBike = (event) => {
     setEscolhaBike(event.target.value);
+  };
+
+  // -----------//---------------
+
+  // Validação de CPF:
+
+  const [cpf, setCpf] = useState("");
+  const [isValidCpf, setIsValidCpf] = useState(true);
+
+  // Função para zerar e atualizar o CPF digitado...
+  const handleCpfChange = (event) => {
+    const newCpf = event.target.value;
+    setCpf(newCpf);
+    setIsValidCpf(true); // Resetar o estado de validação ao alterar o CPF
+    validateCpf(newCpf);
+  };
+
+  // Função para validar o CPF digitado...
+  const validateCpf = (inputCpf) => {
+    // Exemplo de lógica simples de validação
+    const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+    const isValidFormat = cpfRegex.test(inputCpf);
+
+    // Verificar se o CPF tem apenas números e se possui mais de 11 dígitos
+    const isValidLength = /^\d{11}$/.test(inputCpf);
+
+    setIsValidCpf(isValidFormat || isValidLength);
+  };
+
+  // -----------//---------------
+
+  // Validação de Email:
+
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
+  // Função para validar o email digitado...
+  const handleEmailChange = (event) => {
+    const newEmail = event.target.value;
+    setEmail(newEmail);
+    setIsValidEmail(true); // Resetar o estado de validação ao alterar o Email
+    validateEmail(newEmail);
+  };
+
+  const validateEmail = (inputEmail) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValidEmailFormat = emailRegex.test(inputEmail);
+
+    setIsValidEmail(isValidEmailFormat);
+  };
+
+  // -----------//---------------
+
+  // Busca e validação de CEP
+  const [cep, setCep] = useState("");
+  const [address, setAddress] = useState({});
+
+  useEffect(() => {
+    const fetchAddress = async () => {
+      // Validação do CEP para conter 8 digitos.
+      if (cep.length === 8) {
+        // Requisição do CEP...
+        try {
+          const response = await axios.get(
+            `https://viacep.com.br/ws/${cep}/json/`
+          );
+          setAddress(response.data); // Armazenando resultados (data) na variável (response).
+        } catch (error) {
+          console.error("Erro na busca do CEP", error);
+        }
+      }
+    };
+    // O fetchAddress() é chamada automaticamente sempre que o estado do cep é alterado.
+    fetchAddress();
+  }, [cep]);
+
+  const handleCepChange = (event) => {
+    // Remover caracteres não numéricos do CEP
+    const cleanedCep = event.target.value.replace(/\D/g, "");
+
+    // Limitar o CEP a 8 dígitos
+    if (cleanedCep.length <= 8) {
+      setCep(cleanedCep);
+    }
   };
 
   return (
@@ -250,6 +338,7 @@ const Carrinho = () => {
                 Dados pessoais
               </h6>
               <form className="mt-3 p-0">
+                {/* NOME E SOBRENOME */}
                 <div className="flex form-wrap">
                   <div className="w-50 form-mobile">
                     <label for="nome">
@@ -274,19 +363,26 @@ const Carrinho = () => {
                     />
                   </div>
                 </div>
-
+                {/* CPF */}
                 <div className="my-3">
                   <label for="cpf">
                     <p className="bold color-black">CPF</p>
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     name="cpf"
                     id="cpf"
                     placeholder="000.000.000-00"
+                    value={cpf}
+                    onChange={handleCpfChange}
                   />
+                  {!isValidCpf && (
+                    <p className="error-message mt-1 p4 color-red ">
+                      Tente novamente...
+                    </p>
+                  )}
                 </div>
-
+                {/* EMAIL */}
                 <div className="my-3">
                   <label for="email">
                     <p className="bold color-black">Email</p>
@@ -296,7 +392,14 @@ const Carrinho = () => {
                     name="email"
                     id="email"
                     placeholder="contato@email.com"
+                    value={email}
+                    onChange={handleEmailChange}
                   />
+                  {!isValidEmail && (
+                    <p className="error-message mt-1 p4 color-red ">
+                      Tente novamente...
+                    </p>
+                  )}
                 </div>
               </form>
 
@@ -310,10 +413,12 @@ const Carrinho = () => {
                       <p className="bold color-black">CEP</p>
                     </label>
                     <input
-                      type="number"
+                      type="text"
                       name="cep"
                       id="cep"
                       placeholder="00000-000"
+                      value={cep}
+                      onChange={handleCepChange}
                     />
                   </div>
                   <div className="ml-3 w-50 form-mobile">
@@ -325,38 +430,62 @@ const Carrinho = () => {
                 </div>
 
                 <div className="flex form-wrap mt-3">
-                  <div className="w-50 form-mobile">
-                    <label for="logradouro">
-                      <p className="bold color-black">Logradouro</p>
-                    </label>
-                    <input
-                      type="text"
-                      name="logradouro"
-                      id="logradouro"
-                      placeholder="Rua, avenida..."
-                    />
-                  </div>
-                  <div className="ml-3 w-50 form-mobile">
-                    <label for="bairro">
-                      <p className="color-black bold">Bairro</p>
-                    </label>
-                    <input type="text" name="bairro" id="bairro" />
-                  </div>
+                  {address && (
+                    <div className="w-50 form-mobile">
+                      <label for="logradouro">
+                        <p className="bold color-black">Logradouro</p>
+                      </label>
+                      <input
+                        type="text"
+                        name="logradouro"
+                        id="logradouro"
+                        placeholder="Rua, avenida..."
+                        value={address.logradouro || ""}
+                      />
+                    </div>
+                  )}
+                  {address && (
+                    <div className="ml-3 w-50 form-mobile">
+                      <label for="bairro">
+                        <p className="color-black bold">Bairro</p>
+                      </label>
+                      <input
+                        type="text"
+                        name="bairro"
+                        id="bairro"
+                        value={address.bairro || ""}
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex form-wrap mt-3">
-                  <div className="w-50 form-mobile">
-                    <label for="cidade">
-                      <p className="bold color-black">Cidade</p>
-                    </label>
-                    <input type="text" name="cidade" id="cidade" />
-                  </div>
-                  <div className="ml-3 w-50 form-mobile">
-                    <label for="estado">
-                      <p className="color-black bold">Estado</p>
-                    </label>
-                    <input type="text" name="estado" id="estado" />
-                  </div>
+                  {address && (
+                    <div className="w-50 form-mobile">
+                      <label for="cidade">
+                        <p className="bold color-black">Cidade</p>
+                      </label>
+                      <input
+                        type="text"
+                        name="cidade"
+                        id="cidade"
+                        value={address.localidade || ""}
+                      />
+                    </div>
+                  )}
+                  {address && (
+                    <div className="ml-3 w-50 form-mobile">
+                      <label for="estado">
+                        <p className="color-black bold">Estado</p>
+                      </label>
+                      <input
+                        type="text"
+                        name="estado"
+                        id="estado"
+                        value={address.uf || ""}
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <Link to="" className="btn uppercase mt-4">
