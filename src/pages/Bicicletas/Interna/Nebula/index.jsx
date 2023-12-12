@@ -18,9 +18,18 @@ import icon_entrega from "../../../../svg/icon-entrega.svg";
 import icon_estoque from "../../../../svg/icon-estoque.svg";
 
 // Link
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Nebula = () => {
+  // hook useNavigate para obter a função de navegação
+  const navigate = useNavigate();
+
+  // Função para lidar com o clique no botão "Comprar agora"
+  const handleBuyNowClick = () => {
+    // Redirecionar para a página de compra
+    navigate("/carrinho");
+  };
+
   return (
     <>
       <Header />
@@ -62,7 +71,11 @@ const Nebula = () => {
                   garante maior velocidade.
                 </p>
                 <div className="flex-start-row mt-4 bike-action">
-                  <a href="" className="btn uppercase">
+                  <a
+                    href=""
+                    onClick={handleBuyNowClick}
+                    className="btn uppercase"
+                  >
                     Comprar agora
                   </a>
                   <div className="ml-2 w-50 pills">
@@ -186,7 +199,7 @@ const Nebula = () => {
       <section className="bg-black-dark-soft shaddow-white-full-bw">
         <div className="container p-0 seguros-mobile">
           <div className="row flex-center flex-wrap">
-            <div className="grid-6">              
+            <div className="grid-6">
               <img src={img_seguro} />
             </div>
             <div className="grid-6">
